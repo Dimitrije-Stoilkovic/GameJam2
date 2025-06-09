@@ -14,7 +14,7 @@ public class BrushController : MonoBehaviour
     [SerializeField] private GameObject terrainBuilder;
     [SerializeField] private GameObject child;
     [SerializeField] private AudioSource blockAudio;
-    [SerializeField] private float timer;
+    [SerializeField] public float timer;
     
     public int[,] matrix;
     public bool[,] checkingMatrix; 
