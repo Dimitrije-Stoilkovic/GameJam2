@@ -67,7 +67,7 @@ public class BrushController : MonoBehaviour
 
         mousePosition = move.action.ReadValue<Vector2>();
         Vector3 moveDirection = new Vector3(mousePosition.x, 0, mousePosition.y);
-        transform.Translate(speed * Time.deltaTime * moveDirection , Space.World);
+        transform.Translate(speed  * moveDirection , Space.World);
         transform.position = new Vector3(Math.Clamp(transform.position.x, 0, n-1), transform.position.y,Math.Clamp(transform.position.z, 0, n-1));
 
 
